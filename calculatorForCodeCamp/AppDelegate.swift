@@ -4,7 +4,7 @@
 //
 //  Created by 中村俊允 on 2016/12/12.
 //  Copyright © 2016年 Toshimitsu Nakamura. All rights reserved.
-//
+//  暇つぶしゲーム付き電卓
 
 import UIKit
 
