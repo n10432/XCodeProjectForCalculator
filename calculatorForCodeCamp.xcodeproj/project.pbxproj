@@ -14,13 +14,6 @@
 		8B721AE81DFDCE840025EA70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B721AE61DFDCE840025EA70 /* LaunchScreen.storyboard */; };
 		8B721AF31DFDCE850025EA70 /* calculatorForCodeCampTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B721AF21DFDCE850025EA70 /* calculatorForCodeCampTests.swift */; };
 		8B721AFE1DFDCE850025EA70 /* calculatorForCodeCampUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B721AFD1DFDCE850025EA70 /* calculatorForCodeCampUITests.swift */; };
-		8BA1FBDB1DFDD7F500FDFE5F /* bkg1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1FBD21DFDD7F500FDFE5F /* bkg1.jpg */; };
-		8BA1FBDC1DFDD7F500FDFE5F /* bkg2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1FBD31DFDD7F500FDFE5F /* bkg2.jpeg */; };
-		8BA1FBDD1DFDD7F500FDFE5F /* bkground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1FBD41DFDD7F500FDFE5F /* bkground.jpg */; };
-		8BA1FBDE1DFDD7F500FDFE5F /* bkground2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1FBD51DFDD7F500FDFE5F /* bkground2.jpg */; };
-		8BA1FBDF1DFDD7F500FDFE5F /* game_start.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1FBD61DFDD7F500FDFE5F /* game_start.png */; };
-		8BA1FBE01DFDD7F500FDFE5F /* hagure.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1FBD71DFDD7F500FDFE5F /* hagure.png */; };
-		8BA1FBE11DFDD7F500FDFE5F /* slime.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1FBD81DFDD7F500FDFE5F /* slime.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,13 +47,6 @@
 		8B721AF91DFDCE850025EA70 /* calculatorForCodeCampUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = calculatorForCodeCampUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B721AFD1DFDCE850025EA70 /* calculatorForCodeCampUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculatorForCodeCampUITests.swift; sourceTree = "<group>"; };
 		8B721AFF1DFDCE850025EA70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8BA1FBD21DFDD7F500FDFE5F /* bkg1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bkg1.jpg; sourceTree = "<group>"; };
-		8BA1FBD31DFDD7F500FDFE5F /* bkg2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bkg2.jpeg; sourceTree = "<group>"; };
-		8BA1FBD41DFDD7F500FDFE5F /* bkground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bkground.jpg; sourceTree = "<group>"; };
-		8BA1FBD51DFDD7F500FDFE5F /* bkground2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bkground2.jpg; sourceTree = "<group>"; };
-		8BA1FBD61DFDD7F500FDFE5F /* game_start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = game_start.png; sourceTree = "<group>"; };
-		8BA1FBD71DFDD7F500FDFE5F /* hagure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hagure.png; sourceTree = "<group>"; };
-		8BA1FBD81DFDD7F500FDFE5F /* slime.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slime.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,13 +129,6 @@
 		8BA1FBD11DFDD7F500FDFE5F /* img */ = {
 			isa = PBXGroup;
 			children = (
-				8BA1FBD21DFDD7F500FDFE5F /* bkg1.jpg */,
-				8BA1FBD31DFDD7F500FDFE5F /* bkg2.jpeg */,
-				8BA1FBD41DFDD7F500FDFE5F /* bkground.jpg */,
-				8BA1FBD51DFDD7F500FDFE5F /* bkground2.jpg */,
-				8BA1FBD61DFDD7F500FDFE5F /* game_start.png */,
-				8BA1FBD71DFDD7F500FDFE5F /* hagure.png */,
-				8BA1FBD81DFDD7F500FDFE5F /* slime.png */,
 			);
 			path = img;
 			sourceTree = "<group>";
@@ -261,14 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BA1FBDF1DFDD7F500FDFE5F /* game_start.png in Resources */,
-				8BA1FBE01DFDD7F500FDFE5F /* hagure.png in Resources */,
-				8BA1FBE11DFDD7F500FDFE5F /* slime.png in Resources */,
-				8BA1FBDB1DFDD7F500FDFE5F /* bkg1.jpg in Resources */,
-				8BA1FBDE1DFDD7F500FDFE5F /* bkground2.jpg in Resources */,
-				8BA1FBDD1DFDD7F500FDFE5F /* bkground.jpg in Resources */,
 				8B721AE81DFDCE840025EA70 /* LaunchScreen.storyboard in Resources */,
-				8BA1FBDC1DFDD7F500FDFE5F /* bkg2.jpeg in Resources */,
 				8B721AE51DFDCE840025EA70 /* Assets.xcassets in Resources */,
 				8B721AE31DFDCE840025EA70 /* Main.storyboard in Resources */,
 			);
