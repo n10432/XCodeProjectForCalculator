@@ -12,6 +12,8 @@ func dealWithTextField(textField:String, num:String, lastButton:String) -> Strin
     var resultText:String = ""
     if (textField != "0") && (lastButton != "operator"){
         resultText = textField + num
+    } else if num == "." {
+        resultText = textField + num
     } else {
         resultText = num
     }
@@ -20,9 +22,13 @@ func dealWithTextField(textField:String, num:String, lastButton:String) -> Strin
     }
     return resultText
 }
+//小数点以下が非常に小さい場合、整数として表示する
 func checkIntOrDouble (numText:String) -> String {
+    if numText == "nan" {
+        return "ERROR"
+    }
     let temp:Double = atof(numText) - Double(Int(atof(numText)))
-    if temp < 0.000000001 {
+    if fabs(temp) < 0.000000001 {
         return String(Int(atof(numText)))
     }else {
         return numText
@@ -87,27 +93,44 @@ class ViewController: UIViewController {
         lastButton = "0"
     }
     @IBAction func buttonDiv(_ sender: Any) {
+        if lastButton == "operator" {
+            MyCalcClass.changeOperator(input: "/")
+        }else {
         tempResult = String(MyCalcClass.addOperator(num: mainTextField.text!, operaterTemp: "/"))
         mainTextField.text = checkIntOrDouble(numText:tempResult)
         lastButton = "operator"
+        }
     }
     @IBAction func buttonMult(_ sender: Any) {
+        if lastButton == "operator" {
+            MyCalcClass.changeOperator(input: "*")
+        }else {
         tempResult = String(MyCalcClass.addOperator(num: mainTextField.text!, operaterTemp: "*"))
         mainTextField.text = checkIntOrDouble(numText:tempResult)
         lastButton = "operator"
+        }
     }
     @IBAction func buttonSub(_ sender: Any) {
+        if lastButton == "operator" {
+            MyCalcClass.changeOperator(input: "-")
+        }else {
         tempResult = String(MyCalcClass.addOperator(num: mainTextField.text!, operaterTemp: "-"))
         mainTextField.text = checkIntOrDouble(numText:tempResult)
         lastButton = "operator"
+        }
     }
     @IBAction func buttonAdd(_ sender: Any) {
+        if lastButton == "operator" {
+            MyCalcClass.changeOperator(input: "+")
+        }else {
         tempResult = String(MyCalcClass.addOperator(num: mainTextField.text!, operaterTemp: "+"))
         mainTextField.text = checkIntOrDouble(numText:tempResult)
         lastButton = "operator"
+        }
     }
     @IBAction func buttonEqual(_ sender: Any) {
         tempResult = String(MyCalcClass.addOperator(num: mainTextField.text!, operaterTemp: "="))
+        print(tempResult)
         mainTextField.text = checkIntOrDouble(numText:tempResult)
         lastButton = "operator"
         

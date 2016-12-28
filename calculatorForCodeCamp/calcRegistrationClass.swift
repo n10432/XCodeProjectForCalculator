@@ -26,6 +26,9 @@ class calcClass {
         self.operator1 = ""
         self.operator2 = ""
     }
+    func changeOperator(input:String) {
+        self.operator1 = input
+    }
     //計算を実行
     func execCalc(){
         switch self.operator1 {
