@@ -8,12 +8,26 @@
 
 import UIKit
 
+func dealWithTextField(var textField:UITextField!, var num:String) {
+    if textField.text! != "0" {
+        textField.text = textField.text! + num
+    }
+    else{
+        textField.text = num
+    }
+}
+
 class ViewController: UIViewController {
+    var MyCalcClass:calcClass = calcClass()
+    var tempResult:String = ""
 
     @IBOutlet weak var mainTextField: UITextField!
     
+    @IBAction func deleteButton(_ sender: Any) {
+        mainTextField.text = "0"
+    }
     @IBAction func button0(_ sender: Any) {
-        mainTextField.text = mainTextField.text! + "0"
+        mainTextFieldtextFieldmainTextField.text! + "0"
     }
     @IBAction func button1(_ sender: Any) {
         mainTextField.text = mainTextField.text! + "1"
@@ -46,12 +60,20 @@ class ViewController: UIViewController {
         mainTextField.text = mainTextField.text! + "."
     }
     @IBAction func buttonDiv(_ sender: Any) {
+        tempResult = String(MyCalcClass.addOperator(num: mainTextField.text!, operaterTemp: "/"))
+        mainTextField.text = tempResult
     }
     @IBAction func buttonMult(_ sender: Any) {
+        tempResult = String(MyCalcClass.addOperator(num: mainTextField.text!, operaterTemp: "*"))
+        mainTextField.text = tempResult
     }
     @IBAction func buttonSub(_ sender: Any) {
+        tempResult = String(MyCalcClass.addOperator(num: mainTextField.text!, operaterTemp: "-"))
+        mainTextField.text = tempResult
     }
     @IBAction func buttonAdd(_ sender: Any) {
+        tempResult = String(MyCalcClass.addOperator(num: mainTextField.text!, operaterTemp: "+"))
+        mainTextField.text = tempResult
     }
     
     

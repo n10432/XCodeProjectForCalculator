@@ -12,13 +12,13 @@ class calcClass {
     var num2:Double = 0.0
     var operator1:String = ""
     var operator2:String = ""
-    var formulaRegister = [String]()
     
     //演算子情報を記録する
-    func addOperator(num:String, operaterTemp:String){
+    func addOperator(num:String, operaterTemp:String) -> Double{
         self.num2 = atof(num)
         self.operator2 = operaterTemp
         self.execCalc()
+        return self.num1
     }
     
     //計算を実行
@@ -38,7 +38,6 @@ class calcClass {
             self.operator1 = self.operator2
         default:
             print("何もしない")
-            
         }
     }
 }
