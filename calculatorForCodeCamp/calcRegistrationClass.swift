@@ -20,7 +20,12 @@ class calcClass {
         self.execCalc()
         return self.num1
     }
-    
+    func clear() {
+        self.num1 = 0.0
+        self.num2 = 0.0
+        self.operator1 = ""
+        self.operator2 = ""
+    }
     //計算を実行
     func execCalc(){
         switch self.operator1 {
@@ -37,7 +42,8 @@ class calcClass {
             self.num1 = self.num1 / self.num2
             self.operator1 = self.operator2
         default:
-            print("何もしない")
+            self.num1 = self.num2
+            self.operator1 = self.operator2
         }
     }
 }

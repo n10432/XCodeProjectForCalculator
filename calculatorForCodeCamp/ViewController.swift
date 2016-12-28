@@ -8,16 +8,30 @@
 
 import UIKit
 
-func dealWithTextField(var textField:UITextField!, var num:String) {
-    if textField.text! != "0" {
-        textField.text = textField.text! + num
+func dealWithTextField(textField:String, num:String, lastButton:String) -> String {
+    var resultText:String = ""
+    if (textField != "0") && (lastButton != "operator"){
+        resultText = textField + num
+    } else {
+        resultText = num
     }
-    else{
-        textField.text = num
+    if (textField.contains(".")) && (num == ".") {
+        resultText = textField
+    }
+    return resultText
+}
+func checkIntOrDouble (numText:String) -> String {
+    let temp:Double = atof(numText) - Double(Int(atof(numText)))
+    if temp < 0.000000001 {
+        return String(Int(atof(numText)))
+    }else {
+        return numText
     }
 }
 
+
 class ViewController: UIViewController {
+    var lastButton:String = ""
     var MyCalcClass:calcClass = calcClass()
     var tempResult:String = ""
 
@@ -25,55 +39,78 @@ class ViewController: UIViewController {
     
     @IBAction func deleteButton(_ sender: Any) {
         mainTextField.text = "0"
+        MyCalcClass.clear()
     }
     @IBAction func button0(_ sender: Any) {
-        mainTextFieldtextFieldmainTextField.text! + "0"
+        mainTextField.text = dealWithTextField(textField: mainTextField.text!, num: "0", lastButton:lastButton)
+        lastButton = "0"
     }
     @IBAction func button1(_ sender: Any) {
-        mainTextField.text = mainTextField.text! + "1"
+        
+        mainTextField.text = dealWithTextField(textField: mainTextField.text!, num: "1", lastButton:lastButton)
+        lastButton = "0"
     }
     @IBAction func button2(_ sender: Any) {
-        mainTextField.text = mainTextField.text! + "2"
+        mainTextField.text = dealWithTextField(textField: mainTextField.text!, num: "2", lastButton:lastButton)
+        lastButton = "0"
     }
     @IBAction func button3(_ sender: Any) {
-        mainTextField.text = mainTextField.text! + "3"
+        mainTextField.text = dealWithTextField(textField: mainTextField.text!, num: "3", lastButton:lastButton)
+        lastButton = "0"
     }
     @IBAction func button4(_ sender: Any) {
-        mainTextField.text = mainTextField.text! + "4"
+        mainTextField.text = dealWithTextField(textField: mainTextField.text!, num: "4", lastButton:lastButton)
+        lastButton = "0"
     }
     @IBAction func button5(_ sender: Any) {
-        mainTextField.text = mainTextField.text! + "5"
+        mainTextField.text = dealWithTextField(textField: mainTextField.text!, num: "5", lastButton:lastButton)
+        lastButton = "0"
     }
     @IBAction func button6(_ sender: Any) {
-        mainTextField.text = mainTextField.text! + "6"
+        mainTextField.text = dealWithTextField(textField: mainTextField.text!, num: "6", lastButton:lastButton)
+        lastButton = "0"
     }
     @IBAction func button7(_ sender: Any) {
-        mainTextField.text = mainTextField.text! + "7"
+        mainTextField.text = dealWithTextField(textField: mainTextField.text!, num: "7", lastButton:lastButton)
+        lastButton = "0"
     }
     @IBAction func button8(_ sender: Any) {
-        mainTextField.text = mainTextField.text! + "8"
+        mainTextField.text = dealWithTextField(textField: mainTextField.text!, num: "8", lastButton:lastButton)
+        lastButton = "0"
     }
     @IBAction func button9(_ sender: Any) {
-        mainTextField.text = mainTextField.text! + "9"
+        mainTextField.text = dealWithTextField(textField: mainTextField.text!, num: "9", lastButton:lastButton)
+        lastButton = "0"
     }
     @IBAction func buttonPeriod(_ sender: Any) {
-        mainTextField.text = mainTextField.text! + "."
+        mainTextField.text = dealWithTextField(textField: mainTextField.text!, num: ".", lastButton:lastButton)
+        lastButton = "0"
     }
     @IBAction func buttonDiv(_ sender: Any) {
         tempResult = String(MyCalcClass.addOperator(num: mainTextField.text!, operaterTemp: "/"))
-        mainTextField.text = tempResult
+        mainTextField.text = checkIntOrDouble(numText:tempResult)
+        lastButton = "operator"
     }
     @IBAction func buttonMult(_ sender: Any) {
         tempResult = String(MyCalcClass.addOperator(num: mainTextField.text!, operaterTemp: "*"))
-        mainTextField.text = tempResult
+        mainTextField.text = checkIntOrDouble(numText:tempResult)
+        lastButton = "operator"
     }
     @IBAction func buttonSub(_ sender: Any) {
         tempResult = String(MyCalcClass.addOperator(num: mainTextField.text!, operaterTemp: "-"))
-        mainTextField.text = tempResult
+        mainTextField.text = checkIntOrDouble(numText:tempResult)
+        lastButton = "operator"
     }
     @IBAction func buttonAdd(_ sender: Any) {
         tempResult = String(MyCalcClass.addOperator(num: mainTextField.text!, operaterTemp: "+"))
-        mainTextField.text = tempResult
+        mainTextField.text = checkIntOrDouble(numText:tempResult)
+        lastButton = "operator"
+    }
+    @IBAction func buttonEqual(_ sender: Any) {
+        tempResult = String(MyCalcClass.addOperator(num: mainTextField.text!, operaterTemp: "="))
+        mainTextField.text = checkIntOrDouble(numText:tempResult)
+        lastButton = "operator"
+        
     }
     
     
