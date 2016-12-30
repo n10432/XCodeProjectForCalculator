@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B2E82EB1E15F404005F9667 /* forest.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B2E82E91E15F404005F9667 /* forest.png */; };
+		8B2E82EC1E15F404005F9667 /* grassland.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B2E82EA1E15F404005F9667 /* grassland.png */; };
 		8B53595D1E1288A70024A7BC /* calcRegistrationClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B53595C1E1288A70024A7BC /* calcRegistrationClass.swift */; };
 		8B721ADE1DFDCE840025EA70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B721ADD1DFDCE840025EA70 /* AppDelegate.swift */; };
 		8B721AE01DFDCE840025EA70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B721ADF1DFDCE840025EA70 /* ViewController.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B2E82E91E15F404005F9667 /* forest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forest.png; sourceTree = "<group>"; };
+		8B2E82EA1E15F404005F9667 /* grassland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grassland.png; sourceTree = "<group>"; };
 		8B53595C1E1288A70024A7BC /* calcRegistrationClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = calcRegistrationClass.swift; sourceTree = "<group>"; };
 		8B721ADA1DFDCE840025EA70 /* calculatorForCodeCamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = calculatorForCodeCamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B721ADD1DFDCE840025EA70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +136,8 @@
 		8BA1FBD11DFDD7F500FDFE5F /* img */ = {
 			isa = PBXGroup;
 			children = (
+				8B2E82E91E15F404005F9667 /* forest.png */,
+				8B2E82EA1E15F404005F9667 /* grassland.png */,
 			);
 			path = img;
 			sourceTree = "<group>";
@@ -243,9 +249,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B2E82EB1E15F404005F9667 /* forest.png in Resources */,
 				8B721AE81DFDCE840025EA70 /* LaunchScreen.storyboard in Resources */,
 				8B721AE51DFDCE840025EA70 /* Assets.xcassets in Resources */,
 				8B721AE31DFDCE840025EA70 /* Main.storyboard in Resources */,
+				8B2E82EC1E15F404005F9667 /* grassland.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

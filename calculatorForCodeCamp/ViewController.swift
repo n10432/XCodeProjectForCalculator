@@ -8,6 +8,7 @@
 
 import UIKit
 
+//計算結果表示部がうまく表示できるように処理
 func dealWithTextField(textField:String, num:String, lastButton:String) -> String {
     var resultText:String = ""
     if (textField != "0") && (lastButton != "operator"){
@@ -40,9 +41,28 @@ class ViewController: UIViewController {
     var lastButton:String = ""
     var MyCalcClass:calcClass = calcClass()
     var tempResult:String = ""
-
+    @IBOutlet weak var gameDisplay: UIImageView!
+    var screenWidth:CGFloat = 0
+    var screenHeight:CGFloat = 0
+    var width:CGFloat = 0
+    var height:CGFloat = 0
+    var scale:CGFloat = 1.0
+    
     @IBOutlet weak var mainTextField: UITextField!
     
+    @IBAction func changeImage(_ sender: Any) {
+        let image = UIImage(named : "forest.png")!
+        // 画像の幅・高さの取得
+        width = image.size.width
+        height = image.size.height
+        scale = screenWidth / width
+        let rect:CGRect = CGRect(x:0, y:0, width:width*scale, height:height*scale*0.5)
+        gameDisplay.frame = rect
+        
+        //gameDisplay.contentMode = UIViewContentMode.scaleAspectFit
+        //gameDisplay.contentMode = UIViewContentMode.center
+        gameDisplay.image = image
+    }
     @IBAction func deleteButton(_ sender: Any) {
         mainTextField.text = "0"
         MyCalcClass.clear()
@@ -140,6 +160,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        // Screen Size の取得
+        screenWidth = self.view.bounds.width
+        screenHeight = self.view.bounds.height
+        
     }
 
     override func didReceiveMemoryWarning() {
