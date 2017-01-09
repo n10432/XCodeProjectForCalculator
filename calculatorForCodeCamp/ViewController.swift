@@ -47,22 +47,52 @@ class ViewController: UIViewController {
     var width:CGFloat = 0
     var height:CGFloat = 0
     var scale:CGFloat = 1.0
+    private var _stopAnimation = false
+    //画像点滅用
+    var timer: Timer!
+
     
     @IBOutlet weak var mainTextField: UITextField!
-    
+    //画像変更ボタン。背景の設定テスト
     @IBAction func changeImage(_ sender: Any) {
         let image = UIImage(named : "forest.png")!
-        // 画像の幅・高さの取得
-        width = image.size.width
-        height = image.size.height
-        scale = screenWidth / width
-        let rect:CGRect = CGRect(x:0, y:0, width:width*scale, height:height*scale*0.5)
-        gameDisplay.frame = rect
-        
-        //gameDisplay.contentMode = UIViewContentMode.scaleAspectFit
-        //gameDisplay.contentMode = UIViewContentMode.center
+
         gameDisplay.image = image
     }
+    //主人公へのバトルエフェクトview
+    @IBOutlet weak var characterBE: UIImageView!
+    //主人公のview
+    @IBOutlet weak var character: UIImageView!
+    //敵のview
+    @IBOutlet weak var monster: UIImageView!
+    
+    //敵のバトルエフェクトview
+    @IBOutlet weak var monsterBE: UIImageView!
+    
+    @IBAction func tenmetu(_ sender: Any) {
+        if _stopAnimation {
+            return
+        }
+        _stopAnimation = false
+        let charaClass = Character(imageView : character)
+        charaClass.startAnimation(imageView: character)
+    }
+    
+    @IBAction func stopTenmetu(_ sender: Any) {
+        // ボタンが押されたらアニメーションを停止する。
+        _stopAnimation = true
+    }
+    
+    
+    @IBAction func effectTest(_ sender: Any) {
+        let image1 = UIImage(named : "水.gif")!
+        let image2 = UIImage(named : "炎.gif")!
+        let image3 = UIImage.gif(name: "水")
+        sleep(1)
+        characterBE.image = image3
+        monsterBE.image = image2
+    }
+    
     @IBAction func deleteButton(_ sender: Any) {
         mainTextField.text = "0"
         MyCalcClass.clear()
@@ -170,7 +200,6 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 

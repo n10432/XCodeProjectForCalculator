@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -321,7 +322,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2qR-UL-Sfk">
-                                <rect key="frame" x="117" y="353" width="111" height="60"/>
+                                <rect key="frame" x="162" y="353" width="111" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="画像変更">
@@ -339,23 +340,105 @@
                                     <action selector="deleteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1ft-A6-L2Z"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VnZ-eB-B5w">
+                                <rect key="frame" x="20" y="421" width="111" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="止める">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EIh-cd-rrE"/>
+                                    <action selector="changeImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZDY-of-QcV"/>
+                                    <action selector="deleteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Bv-Zi-Dra"/>
+                                    <action selector="stopTenmetu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LaA-1x-FUN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVJ-uX-TR4">
+                                <rect key="frame" x="162" y="421" width="111" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="点滅">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QZr-t6-C05"/>
+                                    <action selector="changeImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S6b-no-sDP"/>
+                                    <action selector="deleteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qfg-dQ-7xp"/>
+                                    <action selector="tenmetu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fZb-eX-g9k"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BNu-WC-l8i">
                                 <rect key="frame" x="3" y="531" width="368" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="BNu-WC-l8i" secondAttribute="height" multiplier="23:8" id="bxD-dZ-dsW"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="mon_191.gif" translatesAutoresizingMaskIntoConstraints="NO" id="iAe-CN-Je7">
+                                <rect key="frame" x="48" y="568" width="61" height="54"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="mon_192.gif" translatesAutoresizingMaskIntoConstraints="NO" id="fBA-91-jTW">
+                                <rect key="frame" x="244" y="568" width="76" height="56"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2u1-cq-8vV">
+                                <rect key="frame" x="81" y="547" width="65" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBf-FM-VT0">
+                                <rect key="frame" x="20" y="353" width="111" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="effectテスト">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qk6-j3-tur"/>
+                                    <action selector="changeImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ob2-aT-2eE"/>
+                                    <action selector="deleteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n0E-ix-pEo"/>
+                                    <action selector="effectTest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RCw-8x-jSN"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hLw-Cz-HHG">
+                                <rect key="frame" x="262" y="541" width="64" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="BNu-WC-l8i" secondAttribute="trailing" id="AnL-Vi-BAK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iAe-CN-Je7" secondAttribute="bottom" constant="10" id="BrN-S8-71l"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BNu-WC-l8i" secondAttribute="bottom" id="Kal-vN-jHa"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fBA-91-jTW" secondAttribute="bottom" constant="10" id="Rni-28-oaC"/>
                             <constraint firstItem="BNu-WC-l8i" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="m2y-HP-kee"/>
+                            <constraint firstItem="iAe-CN-Je7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="nNP-ju-v2y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fBA-91-jTW" secondAttribute="trailing" constant="30" id="oE9-cF-5wk"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="character" destination="iAe-CN-Je7" id="mps-w3-DMd"/>
+                        <outlet property="characterBE" destination="2u1-cq-8vV" id="dzn-hi-Mcu"/>
                         <outlet property="gameDisplay" destination="BNu-WC-l8i" id="Cgm-s0-cNj"/>
                         <outlet property="mainTextField" destination="wIy-hp-JXc" id="nkh-mG-1gi"/>
+                        <outlet property="monster" destination="fBA-91-jTW" id="ZQx-dr-Rnd"/>
+                        <outlet property="monsterBE" destination="hLw-Cz-HHG" id="0aE-x3-uc7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -363,4 +446,8 @@
             <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="mon_191.gif" width="48" height="64"/>
+        <image name="mon_192.gif" width="48" height="48"/>
+    </resources>
 </document>

@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B1D6BA11E17580E0090CA7F /* mon_191.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D6B9F1E17580E0090CA7F /* mon_191.gif */; };
+		8B1D6BA21E17580E0090CA7F /* mon_199.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D6BA01E17580E0090CA7F /* mon_199.gif */; };
+		8B1D6BA61E175A250090CA7F /* mon_192.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D6BA31E175A250090CA7F /* mon_192.gif */; };
+		8B1D6BA71E175A250090CA7F /* mon_193.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D6BA41E175A250090CA7F /* mon_193.gif */; };
+		8B1D6BA81E175A250090CA7F /* mon_194.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D6BA51E175A250090CA7F /* mon_194.gif */; };
+		8B1D6BAB1E17BD680090CA7F /* ヒット＿通常.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D6BAA1E17BD680090CA7F /* ヒット＿通常.wav */; };
+		8B1D6BAD1E17BDA60090CA7F /* 水系＿水撃.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D6BAC1E17BDA60090CA7F /* 水系＿水撃.wav */; };
+		8B1D6BAF1E17BDB30090CA7F /* 炎系＿炎の弾.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D6BAE1E17BDB30090CA7F /* 炎系＿炎の弾.wav */; };
+		8B1D6BB11E17BDFA0090CA7F /* 雷系＿スパークが走る.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D6BB01E17BDFA0090CA7F /* 雷系＿スパークが走る.wav */; };
+		8B1D6BB41E17BF050090CA7F /* 炎.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D6BB31E17BF050090CA7F /* 炎.gif */; };
+		8B1D6BB61E17BF0D0090CA7F /* 水.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D6BB51E17BF0D0090CA7F /* 水.gif */; };
+		8B1D6BB81E17BF130090CA7F /* 雷.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D6BB71E17BF130090CA7F /* 雷.gif */; };
+		8B2DAA4E1E17D7D2006893A0 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2DAA4D1E17D7D2006893A0 /* UIImage+Gif.swift */; };
+		8B2DAA501E17DDBB006893A0 /* characterClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2DAA4F1E17DDBB006893A0 /* characterClass.swift */; };
 		8B2E82EB1E15F404005F9667 /* forest.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B2E82E91E15F404005F9667 /* forest.png */; };
 		8B2E82EC1E15F404005F9667 /* grassland.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B2E82EA1E15F404005F9667 /* grassland.png */; };
 		8B53595D1E1288A70024A7BC /* calcRegistrationClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B53595C1E1288A70024A7BC /* calcRegistrationClass.swift */; };
@@ -17,6 +31,7 @@
 		8B721AE81DFDCE840025EA70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B721AE61DFDCE840025EA70 /* LaunchScreen.storyboard */; };
 		8B721AF31DFDCE850025EA70 /* calculatorForCodeCampTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B721AF21DFDCE850025EA70 /* calculatorForCodeCampTests.swift */; };
 		8B721AFE1DFDCE850025EA70 /* calculatorForCodeCampUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B721AFD1DFDCE850025EA70 /* calculatorForCodeCampUITests.swift */; };
+		8E4BA8CC9904C138806A6719 /* Pods_calculatorForCodeCamp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C5A6EEDB0C831E7BB91177D /* Pods_calculatorForCodeCamp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +52,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C5A6EEDB0C831E7BB91177D /* Pods_calculatorForCodeCamp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_calculatorForCodeCamp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3783E3C109577516B97FFF90 /* Pods_calculatorForCodeCampTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_calculatorForCodeCampTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76CD743B3723DC18D6A95363 /* Pods-calculatorForCodeCamp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calculatorForCodeCamp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-calculatorForCodeCamp/Pods-calculatorForCodeCamp.debug.xcconfig"; sourceTree = "<group>"; };
+		8B1D6B9F1E17580E0090CA7F /* mon_191.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mon_191.gif; sourceTree = "<group>"; };
+		8B1D6BA01E17580E0090CA7F /* mon_199.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mon_199.gif; sourceTree = "<group>"; };
+		8B1D6BA31E175A250090CA7F /* mon_192.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mon_192.gif; sourceTree = "<group>"; };
+		8B1D6BA41E175A250090CA7F /* mon_193.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mon_193.gif; sourceTree = "<group>"; };
+		8B1D6BA51E175A250090CA7F /* mon_194.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mon_194.gif; sourceTree = "<group>"; };
+		8B1D6BAA1E17BD680090CA7F /* ヒット＿通常.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "ヒット＿通常.wav"; sourceTree = "<group>"; };
+		8B1D6BAC1E17BDA60090CA7F /* 水系＿水撃.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "水系＿水撃.wav"; sourceTree = "<group>"; };
+		8B1D6BAE1E17BDB30090CA7F /* 炎系＿炎の弾.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "炎系＿炎の弾.wav"; sourceTree = "<group>"; };
+		8B1D6BB01E17BDFA0090CA7F /* 雷系＿スパークが走る.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "雷系＿スパークが走る.wav"; sourceTree = "<group>"; };
+		8B1D6BB31E17BF050090CA7F /* 炎.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "炎.gif"; sourceTree = "<group>"; };
+		8B1D6BB51E17BF0D0090CA7F /* 水.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "水.gif"; sourceTree = "<group>"; };
+		8B1D6BB71E17BF130090CA7F /* 雷.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "雷.gif"; sourceTree = "<group>"; };
+		8B2DAA4D1E17D7D2006893A0 /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
+		8B2DAA4F1E17DDBB006893A0 /* characterClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = characterClass.swift; sourceTree = "<group>"; };
 		8B2E82E91E15F404005F9667 /* forest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forest.png; sourceTree = "<group>"; };
 		8B2E82EA1E15F404005F9667 /* grassland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grassland.png; sourceTree = "<group>"; };
 		8B53595C1E1288A70024A7BC /* calcRegistrationClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = calcRegistrationClass.swift; sourceTree = "<group>"; };
@@ -53,6 +85,8 @@
 		8B721AF91DFDCE850025EA70 /* calculatorForCodeCampUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = calculatorForCodeCampUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B721AFD1DFDCE850025EA70 /* calculatorForCodeCampUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculatorForCodeCampUITests.swift; sourceTree = "<group>"; };
 		8B721AFF1DFDCE850025EA70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C91A3114DFEEBDE7CCF7FAD7 /* Pods-calculatorForCodeCamp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calculatorForCodeCamp.release.xcconfig"; path = "Pods/Target Support Files/Pods-calculatorForCodeCamp/Pods-calculatorForCodeCamp.release.xcconfig"; sourceTree = "<group>"; };
+		E12E643F6EA90DD3A575DFFB /* Pods_calculatorForCodeCampUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_calculatorForCodeCampUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E4BA8CC9904C138806A6719 /* Pods_calculatorForCodeCamp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +115,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E509092068F98CC948C33CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C5A6EEDB0C831E7BB91177D /* Pods_calculatorForCodeCamp.framework */,
+				3783E3C109577516B97FFF90 /* Pods_calculatorForCodeCampTests.framework */,
+				E12E643F6EA90DD3A575DFFB /* Pods_calculatorForCodeCampUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B1D6BA91E17BD5E0090CA7F /* SE */ = {
+			isa = PBXGroup;
+			children = (
+				8B1D6BAC1E17BDA60090CA7F /* 水系＿水撃.wav */,
+				8B1D6BAE1E17BDB30090CA7F /* 炎系＿炎の弾.wav */,
+				8B1D6BB01E17BDFA0090CA7F /* 雷系＿スパークが走る.wav */,
+				8B1D6BAA1E17BD680090CA7F /* ヒット＿通常.wav */,
+			);
+			name = SE;
+			sourceTree = "<group>";
+		};
+		8B1D6BB21E17BED00090CA7F /* battleEffect */ = {
+			isa = PBXGroup;
+			children = (
+				8B1D6BB51E17BF0D0090CA7F /* 水.gif */,
+				8B1D6BB71E17BF130090CA7F /* 雷.gif */,
+				8B1D6BB31E17BF050090CA7F /* 炎.gif */,
+			);
+			name = battleEffect;
+			sourceTree = "<group>";
+		};
 		8B721AD11DFDCE840025EA70 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +153,8 @@
 				8B721AF11DFDCE850025EA70 /* calculatorForCodeCampTests */,
 				8B721AFC1DFDCE850025EA70 /* calculatorForCodeCampUITests */,
 				8B721ADB1DFDCE840025EA70 /* Products */,
+				FC75E368DB5E51E247E33986 /* Pods */,
+				5E509092068F98CC948C33CB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,10 +171,14 @@
 		8B721ADC1DFDCE840025EA70 /* calculatorForCodeCamp */ = {
 			isa = PBXGroup;
 			children = (
+				8B1D6BB21E17BED00090CA7F /* battleEffect */,
+				8B1D6BA91E17BD5E0090CA7F /* SE */,
 				8B721ADD1DFDCE840025EA70 /* AppDelegate.swift */,
+				8B2DAA4D1E17D7D2006893A0 /* UIImage+Gif.swift */,
 				8B721ADF1DFDCE840025EA70 /* ViewController.swift */,
 				8B721AE11DFDCE840025EA70 /* Main.storyboard */,
 				8B53595C1E1288A70024A7BC /* calcRegistrationClass.swift */,
+				8B2DAA4F1E17DDBB006893A0 /* characterClass.swift */,
 				8BA1FBD11DFDD7F500FDFE5F /* img */,
 				8B721AE41DFDCE840025EA70 /* Assets.xcassets */,
 				8B721AE61DFDCE840025EA70 /* LaunchScreen.storyboard */,
@@ -136,10 +208,24 @@
 		8BA1FBD11DFDD7F500FDFE5F /* img */ = {
 			isa = PBXGroup;
 			children = (
+				8B1D6BA31E175A250090CA7F /* mon_192.gif */,
+				8B1D6BA41E175A250090CA7F /* mon_193.gif */,
+				8B1D6BA51E175A250090CA7F /* mon_194.gif */,
+				8B1D6B9F1E17580E0090CA7F /* mon_191.gif */,
+				8B1D6BA01E17580E0090CA7F /* mon_199.gif */,
 				8B2E82E91E15F404005F9667 /* forest.png */,
 				8B2E82EA1E15F404005F9667 /* grassland.png */,
 			);
 			path = img;
+			sourceTree = "<group>";
+		};
+		FC75E368DB5E51E247E33986 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				76CD743B3723DC18D6A95363 /* Pods-calculatorForCodeCamp.debug.xcconfig */,
+				C91A3114DFEEBDE7CCF7FAD7 /* Pods-calculatorForCodeCamp.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +235,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B721B021DFDCE850025EA70 /* Build configuration list for PBXNativeTarget "calculatorForCodeCamp" */;
 			buildPhases = (
+				2400093928D8D53DEEF6F6CA /* [CP] Check Pods Manifest.lock */,
 				8B721AD61DFDCE840025EA70 /* Sources */,
 				8B721AD71DFDCE840025EA70 /* Frameworks */,
 				8B721AD81DFDCE840025EA70 /* Resources */,
+				DDCF1B801924926C7E618A26 /* [CP] Embed Pods Frameworks */,
+				DFD0C31CBAA90BBA523B3624 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,10 +338,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B1D6BB41E17BF050090CA7F /* 炎.gif in Resources */,
 				8B2E82EB1E15F404005F9667 /* forest.png in Resources */,
 				8B721AE81DFDCE840025EA70 /* LaunchScreen.storyboard in Resources */,
+				8B1D6BB81E17BF130090CA7F /* 雷.gif in Resources */,
+				8B1D6BA81E175A250090CA7F /* mon_194.gif in Resources */,
 				8B721AE51DFDCE840025EA70 /* Assets.xcassets in Resources */,
+				8B1D6BA21E17580E0090CA7F /* mon_199.gif in Resources */,
+				8B1D6BA61E175A250090CA7F /* mon_192.gif in Resources */,
+				8B1D6BAD1E17BDA60090CA7F /* 水系＿水撃.wav in Resources */,
+				8B1D6BA11E17580E0090CA7F /* mon_191.gif in Resources */,
+				8B1D6BA71E175A250090CA7F /* mon_193.gif in Resources */,
+				8B1D6BB11E17BDFA0090CA7F /* 雷系＿スパークが走る.wav in Resources */,
+				8B1D6BAF1E17BDB30090CA7F /* 炎系＿炎の弾.wav in Resources */,
 				8B721AE31DFDCE840025EA70 /* Main.storyboard in Resources */,
+				8B1D6BB61E17BF0D0090CA7F /* 水.gif in Resources */,
+				8B1D6BAB1E17BD680090CA7F /* ヒット＿通常.wav in Resources */,
 				8B2E82EC1E15F404005F9667 /* grassland.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +374,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2400093928D8D53DEEF6F6CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DDCF1B801924926C7E618A26 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-calculatorForCodeCamp/Pods-calculatorForCodeCamp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFD0C31CBAA90BBA523B3624 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-calculatorForCodeCamp/Pods-calculatorForCodeCamp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8B721AD61DFDCE840025EA70 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -280,7 +429,9 @@
 			files = (
 				8B721AE01DFDCE840025EA70 /* ViewController.swift in Sources */,
 				8B53595D1E1288A70024A7BC /* calcRegistrationClass.swift in Sources */,
+				8B2DAA4E1E17D7D2006893A0 /* UIImage+Gif.swift in Sources */,
 				8B721ADE1DFDCE840025EA70 /* AppDelegate.swift in Sources */,
+				8B2DAA501E17DDBB006893A0 /* characterClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +579,7 @@
 		};
 		8B721B031DFDCE850025EA70 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76CD743B3723DC18D6A95363 /* Pods-calculatorForCodeCamp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = calculatorForCodeCamp/Info.plist;
@@ -440,6 +592,7 @@
 		};
 		8B721B041DFDCE850025EA70 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C91A3114DFEEBDE7CCF7FAD7 /* Pods-calculatorForCodeCamp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = calculatorForCodeCamp/Info.plist;
