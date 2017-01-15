@@ -11,21 +11,39 @@ import UIKit
 
 class Character {
     //レベル
-    var level: Int
     //HP
-    var hp: Int
     //対応するイメージビュー
-    var imageView: UIImageView!
     //画像
+    var level: Int
+    var hp: Int
+    var strength: Int
+    var imageView: UIImageView!
     var image: UIImage!
+
         
     // イニシャライザ
     init(level: Int = 1, image: String = "mon_191.gif", imageView: UIImageView) {
         self.level = level
         self.hp = 100 * level
+        self.strength = 1 * level
         self.image = UIImage(named : image)!
         self.imageView = imageView
         self.imageView.image = self.image
+    }
+    // レベルUP メソッド
+    func levelUp() {
+        level += 1
+        //レベルアップ時のエフェクトを何か追加
+    }
+    // 攻撃時ダメージ計算
+    func attack(enemy: Character) -> String {
+        enemy.hp -= ( strength - Int(arc4random_uniform(UInt32(strength / level))) ) // 計算適当
+        enemy.hp = enemy.hp < 0 ? 0 : enemy.hp
+        return "you"
+    }
+    //音声の出力
+    func Sound(){
+        
     }
     
     func startAnimation(imageView : UIImageView) {
@@ -42,13 +60,4 @@ class Character {
         }, completion: { _ in self.startAnimation(imageView: imageView) })})
     }
     
-    // レベルUP メソッド
-    func levelUp() {
-        level += 1
-        //レベルアップ時のエフェクトを何か追加
-    }
-    // 攻撃時のエフェクトとか点滅動作
-    func atack(enemy: Character) -> String {
-        return "a"
-    }
 }

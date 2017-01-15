@@ -420,6 +420,27 @@
                                 <rect key="frame" x="262" y="541" width="64" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8k-ht-uNK">
+                                <rect key="frame" x="71" y="489" width="85" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="ダメージ">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0F6-6K-GGt"/>
+                                    <action selector="changeImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aiT-os-4Ln"/>
+                                    <action selector="damageTest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h4c-NY-lgv"/>
+                                    <action selector="deleteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RH2-g1-uCb"/>
+                                    <action selector="stopTenmetu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UWK-tp-tRi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>

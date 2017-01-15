@@ -51,6 +51,11 @@ class ViewController: UIViewController {
     //画像点滅用
     var timer: Timer!
 
+    @IBAction func damageTest(_ sender: Any) {
+        let mikata = Character(imageView : character)
+        let teki = Character(imageView : character)
+    }
+    
     
     @IBOutlet weak var mainTextField: UITextField!
     //画像変更ボタン。背景の設定テスト
@@ -60,13 +65,12 @@ class ViewController: UIViewController {
         gameDisplay.image = image
     }
     //主人公へのバトルエフェクトview
-    @IBOutlet weak var characterBE: UIImageView!
     //主人公のview
-    @IBOutlet weak var character: UIImageView!
     //敵のview
-    @IBOutlet weak var monster: UIImageView!
-    
     //敵のバトルエフェクトview
+    @IBOutlet weak var characterBE: UIImageView!
+    @IBOutlet weak var character: UIImageView!
+    @IBOutlet weak var monster: UIImageView!
     @IBOutlet weak var monsterBE: UIImageView!
     
     @IBAction func tenmetu(_ sender: Any) {
