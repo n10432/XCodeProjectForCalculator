@@ -7,6 +7,33 @@
 //
 
 import UIKit
+import AVFoundation
+
+var monster: [String] = ["mon_051.gif", "mon_052.gif", "mon_053.gif", "mon_054.gif", "mon_055.gif", "mon_057.gif", "mon_058.gif", "mon_061.gif", "mon_062.gif", "mon_063.gif", "mon_065.gif", "mon_066.gif", "mon_067.gif", "mon_068.gif", "mon_069.gif", "mon_070.gif", "mon_192.gif", "mon_193.gif", "mon_196.gif", "mon_197.gif", "mon_198.gif", "mon_219.gif", "mon_220.gif"]
+var character: [String] = ["chara1.gif", "chara2.gif", "chara3.gif"]
+
+
+var mikata:Character = Character(imageStr: character)
+var teki:Character = Character(imageStr: monster)
+var audioPlayer : AVAudioPlayer! = nil
+
+func BGM(){
+    
+    //音声ファイルのパスを作る。
+    let soundFilePathClear : NSString = Bundle.main.path(forResource: "f008_forest8", ofType: "mp3")! as NSString
+    let soundClear : NSURL = NSURL(fileURLWithPath: soundFilePathClear as String)
+    //AVAudioPlayerのインスタンス化
+    do{
+        audioPlayer = try AVAudioPlayer(contentsOf: soundClear as URL, fileTypeHint:nil)
+    }catch{
+        print("Failed AVAudioPlayer Instance")
+    }
+    audioPlayer.numberOfLoops = -1
+    //出来たインスタンスをバッファに保持する。
+    audioPlayer.prepareToPlay()
+    audioPlayer.play()
+    
+}
 
 //計算結果表示部がうまく表示できるように処理
 func dealWithTextField(textField:String, num:String, lastButton:String) -> String {
@@ -48,54 +75,30 @@ class ViewController: UIViewController {
     var height:CGFloat = 0
     var scale:CGFloat = 1.0
     private var _stopAnimation = false
-    //画像点滅用
-    var timer: Timer!
-
-    @IBAction func damageTest(_ sender: Any) {
-        let mikata = Character(imageView : character)
-        let teki = Character(imageView : character)
-    }
-    
-    
-    @IBOutlet weak var mainTextField: UITextField!
-    //画像変更ボタン。背景の設定テスト
-    @IBAction func changeImage(_ sender: Any) {
-        let image = UIImage(named : "forest.png")!
-
-        gameDisplay.image = image
-    }
-    //主人公へのバトルエフェクトview
-    //主人公のview
-    //敵のview
-    //敵のバトルエフェクトview
     @IBOutlet weak var characterBE: UIImageView!
     @IBOutlet weak var character: UIImageView!
     @IBOutlet weak var monster: UIImageView!
     @IBOutlet weak var monsterBE: UIImageView!
+    //var mikata:Character?
+    //var teki:Character?
     
-    @IBAction func tenmetu(_ sender: Any) {
-        if _stopAnimation {
-            return
-        }
-        _stopAnimation = false
-        let charaClass = Character(imageView : character)
-        charaClass.startAnimation(imageView: character)
-    }
-    
-    @IBAction func stopTenmetu(_ sender: Any) {
-        // ボタンが押されたらアニメーションを停止する。
-        _stopAnimation = true
+    //画像点滅用
+    var timer: Timer!
+
+    @IBAction func damageTest(_ sender: Any) {
+        mikata.attack(enemy: teki)
+        print("test")
     }
     
     
-    @IBAction func effectTest(_ sender: Any) {
-        let image1 = UIImage(named : "水.gif")!
-        let image2 = UIImage(named : "炎.gif")!
-        let image3 = UIImage.gif(name: "水")
-        sleep(1)
-        characterBE.image = image3
-        monsterBE.image = image2
-    }
+    @IBOutlet weak var mainTextField: UITextField!
+
+    //主人公へのバトルエフェクトview
+    //主人公のview
+    //敵のview
+    //敵のバトルエフェクトview
+
+    
     
     @IBAction func deleteButton(_ sender: Any) {
         mainTextField.text = "0"
@@ -193,11 +196,16 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        mikata.setImageView(imageView: character)
+        teki.setImageView(imageView: monster)
+        let image = UIImage(named : "forest.png")!
+        
+        gameDisplay.image = image
         // Do any additional setup after loading the view, typically from a nib.
         // Screen Size の取得
         screenWidth = self.view.bounds.width
         screenHeight = self.view.bounds.height
-        
+        BGM()
     }
 
     override func didReceiveMemoryWarning() {

@@ -7,11 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8B1D6BA11E17580E0090CA7F /* mon_191.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D6B9F1E17580E0090CA7F /* mon_191.gif */; };
-		8B1D6BA21E17580E0090CA7F /* mon_199.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D6BA01E17580E0090CA7F /* mon_199.gif */; };
-		8B1D6BA61E175A250090CA7F /* mon_192.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D6BA31E175A250090CA7F /* mon_192.gif */; };
-		8B1D6BA71E175A250090CA7F /* mon_193.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D6BA41E175A250090CA7F /* mon_193.gif */; };
-		8B1D6BA81E175A250090CA7F /* mon_194.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D6BA51E175A250090CA7F /* mon_194.gif */; };
+		8B1D6BA11E17580E0090CA7F /* chara1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D6B9F1E17580E0090CA7F /* chara1.gif */; };
+		8B1D6BA21E17580E0090CA7F /* chara3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D6BA01E17580E0090CA7F /* chara3.gif */; };
+		8B1D6BA81E175A250090CA7F /* chara2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D6BA51E175A250090CA7F /* chara2.gif */; };
 		8B1D6BAB1E17BD680090CA7F /* ヒット＿通常.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D6BAA1E17BD680090CA7F /* ヒット＿通常.wav */; };
 		8B1D6BAD1E17BDA60090CA7F /* 水系＿水撃.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D6BAC1E17BDA60090CA7F /* 水系＿水撃.wav */; };
 		8B1D6BAF1E17BDB30090CA7F /* 炎系＿炎の弾.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D6BAE1E17BDB30090CA7F /* 炎系＿炎の弾.wav */; };
@@ -19,6 +17,32 @@
 		8B1D6BB41E17BF050090CA7F /* 炎.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D6BB31E17BF050090CA7F /* 炎.gif */; };
 		8B1D6BB61E17BF0D0090CA7F /* 水.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D6BB51E17BF0D0090CA7F /* 水.gif */; };
 		8B1D6BB81E17BF130090CA7F /* 雷.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D6BB71E17BF130090CA7F /* 雷.gif */; };
+		8B27F84D1E2FBE9000BADE09 /* attack.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8B27F84C1E2FBE9000BADE09 /* attack.wav */; };
+		8B27F8501E2FD24000BADE09 /* f008_forest8.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8B27F84F1E2FD24000BADE09 /* f008_forest8.mp3 */; };
+		8B27F8521E2FD5EF00BADE09 /* se_maoudamashii_onepoint23.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8B27F8511E2FD5EF00BADE09 /* se_maoudamashii_onepoint23.mp3 */; };
+		8B27F86A1E2FDD8A00BADE09 /* mon_051.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B27F8531E2FDD8A00BADE09 /* mon_051.gif */; };
+		8B27F86B1E2FDD8A00BADE09 /* mon_052.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B27F8541E2FDD8A00BADE09 /* mon_052.gif */; };
+		8B27F86C1E2FDD8A00BADE09 /* mon_053.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B27F8551E2FDD8A00BADE09 /* mon_053.gif */; };
+		8B27F86D1E2FDD8A00BADE09 /* mon_054.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B27F8561E2FDD8A00BADE09 /* mon_054.gif */; };
+		8B27F86E1E2FDD8A00BADE09 /* mon_055.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B27F8571E2FDD8A00BADE09 /* mon_055.gif */; };
+		8B27F86F1E2FDD8A00BADE09 /* mon_057.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B27F8581E2FDD8A00BADE09 /* mon_057.gif */; };
+		8B27F8701E2FDD8A00BADE09 /* mon_058.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B27F8591E2FDD8A00BADE09 /* mon_058.gif */; };
+		8B27F8711E2FDD8A00BADE09 /* mon_061.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B27F85A1E2FDD8A00BADE09 /* mon_061.gif */; };
+		8B27F8721E2FDD8A00BADE09 /* mon_062.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B27F85B1E2FDD8A00BADE09 /* mon_062.gif */; };
+		8B27F8731E2FDD8A00BADE09 /* mon_063.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B27F85C1E2FDD8A00BADE09 /* mon_063.gif */; };
+		8B27F8741E2FDD8A00BADE09 /* mon_065.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B27F85D1E2FDD8A00BADE09 /* mon_065.gif */; };
+		8B27F8751E2FDD8A00BADE09 /* mon_066.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B27F85E1E2FDD8A00BADE09 /* mon_066.gif */; };
+		8B27F8761E2FDD8A00BADE09 /* mon_067.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B27F85F1E2FDD8A00BADE09 /* mon_067.gif */; };
+		8B27F8771E2FDD8A00BADE09 /* mon_068.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B27F8601E2FDD8A00BADE09 /* mon_068.gif */; };
+		8B27F8781E2FDD8A00BADE09 /* mon_069.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B27F8611E2FDD8A00BADE09 /* mon_069.gif */; };
+		8B27F8791E2FDD8A00BADE09 /* mon_070.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B27F8621E2FDD8A00BADE09 /* mon_070.gif */; };
+		8B27F87A1E2FDD8A00BADE09 /* mon_192.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B27F8631E2FDD8A00BADE09 /* mon_192.gif */; };
+		8B27F87B1E2FDD8A00BADE09 /* mon_193.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B27F8641E2FDD8A00BADE09 /* mon_193.gif */; };
+		8B27F87C1E2FDD8A00BADE09 /* mon_196.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B27F8651E2FDD8A00BADE09 /* mon_196.gif */; };
+		8B27F87D1E2FDD8A00BADE09 /* mon_197.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B27F8661E2FDD8A00BADE09 /* mon_197.gif */; };
+		8B27F87E1E2FDD8A00BADE09 /* mon_198.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B27F8671E2FDD8A00BADE09 /* mon_198.gif */; };
+		8B27F87F1E2FDD8A00BADE09 /* mon_219.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B27F8681E2FDD8A00BADE09 /* mon_219.gif */; };
+		8B27F8801E2FDD8A00BADE09 /* mon_220.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B27F8691E2FDD8A00BADE09 /* mon_220.gif */; };
 		8B2DAA4E1E17D7D2006893A0 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2DAA4D1E17D7D2006893A0 /* UIImage+Gif.swift */; };
 		8B2DAA501E17DDBB006893A0 /* characterClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2DAA4F1E17DDBB006893A0 /* characterClass.swift */; };
 		8B2E82EB1E15F404005F9667 /* forest.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B2E82E91E15F404005F9667 /* forest.png */; };
@@ -55,11 +79,9 @@
 		1C5A6EEDB0C831E7BB91177D /* Pods_calculatorForCodeCamp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_calculatorForCodeCamp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3783E3C109577516B97FFF90 /* Pods_calculatorForCodeCampTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_calculatorForCodeCampTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76CD743B3723DC18D6A95363 /* Pods-calculatorForCodeCamp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calculatorForCodeCamp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-calculatorForCodeCamp/Pods-calculatorForCodeCamp.debug.xcconfig"; sourceTree = "<group>"; };
-		8B1D6B9F1E17580E0090CA7F /* mon_191.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mon_191.gif; sourceTree = "<group>"; };
-		8B1D6BA01E17580E0090CA7F /* mon_199.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mon_199.gif; sourceTree = "<group>"; };
-		8B1D6BA31E175A250090CA7F /* mon_192.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mon_192.gif; sourceTree = "<group>"; };
-		8B1D6BA41E175A250090CA7F /* mon_193.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mon_193.gif; sourceTree = "<group>"; };
-		8B1D6BA51E175A250090CA7F /* mon_194.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mon_194.gif; sourceTree = "<group>"; };
+		8B1D6B9F1E17580E0090CA7F /* chara1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = chara1.gif; sourceTree = "<group>"; };
+		8B1D6BA01E17580E0090CA7F /* chara3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = chara3.gif; sourceTree = "<group>"; };
+		8B1D6BA51E175A250090CA7F /* chara2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = chara2.gif; sourceTree = "<group>"; };
 		8B1D6BAA1E17BD680090CA7F /* ヒット＿通常.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "ヒット＿通常.wav"; sourceTree = "<group>"; };
 		8B1D6BAC1E17BDA60090CA7F /* 水系＿水撃.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "水系＿水撃.wav"; sourceTree = "<group>"; };
 		8B1D6BAE1E17BDB30090CA7F /* 炎系＿炎の弾.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "炎系＿炎の弾.wav"; sourceTree = "<group>"; };
@@ -67,6 +89,32 @@
 		8B1D6BB31E17BF050090CA7F /* 炎.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "炎.gif"; sourceTree = "<group>"; };
 		8B1D6BB51E17BF0D0090CA7F /* 水.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "水.gif"; sourceTree = "<group>"; };
 		8B1D6BB71E17BF130090CA7F /* 雷.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "雷.gif"; sourceTree = "<group>"; };
+		8B27F84C1E2FBE9000BADE09 /* attack.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = attack.wav; sourceTree = "<group>"; };
+		8B27F84F1E2FD24000BADE09 /* f008_forest8.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = f008_forest8.mp3; sourceTree = "<group>"; };
+		8B27F8511E2FD5EF00BADE09 /* se_maoudamashii_onepoint23.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = se_maoudamashii_onepoint23.mp3; sourceTree = "<group>"; };
+		8B27F8531E2FDD8A00BADE09 /* mon_051.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mon_051.gif; sourceTree = "<group>"; };
+		8B27F8541E2FDD8A00BADE09 /* mon_052.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mon_052.gif; sourceTree = "<group>"; };
+		8B27F8551E2FDD8A00BADE09 /* mon_053.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mon_053.gif; sourceTree = "<group>"; };
+		8B27F8561E2FDD8A00BADE09 /* mon_054.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mon_054.gif; sourceTree = "<group>"; };
+		8B27F8571E2FDD8A00BADE09 /* mon_055.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mon_055.gif; sourceTree = "<group>"; };
+		8B27F8581E2FDD8A00BADE09 /* mon_057.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mon_057.gif; sourceTree = "<group>"; };
+		8B27F8591E2FDD8A00BADE09 /* mon_058.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mon_058.gif; sourceTree = "<group>"; };
+		8B27F85A1E2FDD8A00BADE09 /* mon_061.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mon_061.gif; sourceTree = "<group>"; };
+		8B27F85B1E2FDD8A00BADE09 /* mon_062.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mon_062.gif; sourceTree = "<group>"; };
+		8B27F85C1E2FDD8A00BADE09 /* mon_063.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mon_063.gif; sourceTree = "<group>"; };
+		8B27F85D1E2FDD8A00BADE09 /* mon_065.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mon_065.gif; sourceTree = "<group>"; };
+		8B27F85E1E2FDD8A00BADE09 /* mon_066.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mon_066.gif; sourceTree = "<group>"; };
+		8B27F85F1E2FDD8A00BADE09 /* mon_067.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mon_067.gif; sourceTree = "<group>"; };
+		8B27F8601E2FDD8A00BADE09 /* mon_068.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mon_068.gif; sourceTree = "<group>"; };
+		8B27F8611E2FDD8A00BADE09 /* mon_069.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mon_069.gif; sourceTree = "<group>"; };
+		8B27F8621E2FDD8A00BADE09 /* mon_070.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mon_070.gif; sourceTree = "<group>"; };
+		8B27F8631E2FDD8A00BADE09 /* mon_192.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mon_192.gif; sourceTree = "<group>"; };
+		8B27F8641E2FDD8A00BADE09 /* mon_193.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mon_193.gif; sourceTree = "<group>"; };
+		8B27F8651E2FDD8A00BADE09 /* mon_196.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mon_196.gif; sourceTree = "<group>"; };
+		8B27F8661E2FDD8A00BADE09 /* mon_197.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mon_197.gif; sourceTree = "<group>"; };
+		8B27F8671E2FDD8A00BADE09 /* mon_198.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mon_198.gif; sourceTree = "<group>"; };
+		8B27F8681E2FDD8A00BADE09 /* mon_219.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mon_219.gif; sourceTree = "<group>"; };
+		8B27F8691E2FDD8A00BADE09 /* mon_220.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mon_220.gif; sourceTree = "<group>"; };
 		8B2DAA4D1E17D7D2006893A0 /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
 		8B2DAA4F1E17DDBB006893A0 /* characterClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = characterClass.swift; sourceTree = "<group>"; };
 		8B2E82E91E15F404005F9667 /* forest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forest.png; sourceTree = "<group>"; };
@@ -130,6 +178,8 @@
 			children = (
 				8B1D6BAC1E17BDA60090CA7F /* 水系＿水撃.wav */,
 				8B1D6BAE1E17BDB30090CA7F /* 炎系＿炎の弾.wav */,
+				8B27F8511E2FD5EF00BADE09 /* se_maoudamashii_onepoint23.mp3 */,
+				8B27F84C1E2FBE9000BADE09 /* attack.wav */,
 				8B1D6BB01E17BDFA0090CA7F /* 雷系＿スパークが走る.wav */,
 				8B1D6BAA1E17BD680090CA7F /* ヒット＿通常.wav */,
 			);
@@ -144,6 +194,14 @@
 				8B1D6BB31E17BF050090CA7F /* 炎.gif */,
 			);
 			name = battleEffect;
+			sourceTree = "<group>";
+		};
+		8B27F84E1E2FD23100BADE09 /* BGM */ = {
+			isa = PBXGroup;
+			children = (
+				8B27F84F1E2FD24000BADE09 /* f008_forest8.mp3 */,
+			);
+			name = BGM;
 			sourceTree = "<group>";
 		};
 		8B721AD11DFDCE840025EA70 = {
@@ -171,6 +229,7 @@
 		8B721ADC1DFDCE840025EA70 /* calculatorForCodeCamp */ = {
 			isa = PBXGroup;
 			children = (
+				8B27F84E1E2FD23100BADE09 /* BGM */,
 				8B1D6BB21E17BED00090CA7F /* battleEffect */,
 				8B1D6BA91E17BD5E0090CA7F /* SE */,
 				8B721ADD1DFDCE840025EA70 /* AppDelegate.swift */,
@@ -208,11 +267,32 @@
 		8BA1FBD11DFDD7F500FDFE5F /* img */ = {
 			isa = PBXGroup;
 			children = (
-				8B1D6BA31E175A250090CA7F /* mon_192.gif */,
-				8B1D6BA41E175A250090CA7F /* mon_193.gif */,
-				8B1D6BA51E175A250090CA7F /* mon_194.gif */,
-				8B1D6B9F1E17580E0090CA7F /* mon_191.gif */,
-				8B1D6BA01E17580E0090CA7F /* mon_199.gif */,
+				8B27F8531E2FDD8A00BADE09 /* mon_051.gif */,
+				8B27F8541E2FDD8A00BADE09 /* mon_052.gif */,
+				8B27F8551E2FDD8A00BADE09 /* mon_053.gif */,
+				8B27F8561E2FDD8A00BADE09 /* mon_054.gif */,
+				8B27F8571E2FDD8A00BADE09 /* mon_055.gif */,
+				8B27F8581E2FDD8A00BADE09 /* mon_057.gif */,
+				8B27F8591E2FDD8A00BADE09 /* mon_058.gif */,
+				8B27F85A1E2FDD8A00BADE09 /* mon_061.gif */,
+				8B27F85B1E2FDD8A00BADE09 /* mon_062.gif */,
+				8B27F85C1E2FDD8A00BADE09 /* mon_063.gif */,
+				8B27F85D1E2FDD8A00BADE09 /* mon_065.gif */,
+				8B27F85E1E2FDD8A00BADE09 /* mon_066.gif */,
+				8B27F85F1E2FDD8A00BADE09 /* mon_067.gif */,
+				8B27F8601E2FDD8A00BADE09 /* mon_068.gif */,
+				8B27F8611E2FDD8A00BADE09 /* mon_069.gif */,
+				8B27F8621E2FDD8A00BADE09 /* mon_070.gif */,
+				8B27F8631E2FDD8A00BADE09 /* mon_192.gif */,
+				8B27F8641E2FDD8A00BADE09 /* mon_193.gif */,
+				8B27F8651E2FDD8A00BADE09 /* mon_196.gif */,
+				8B27F8661E2FDD8A00BADE09 /* mon_197.gif */,
+				8B27F8671E2FDD8A00BADE09 /* mon_198.gif */,
+				8B27F8681E2FDD8A00BADE09 /* mon_219.gif */,
+				8B27F8691E2FDD8A00BADE09 /* mon_220.gif */,
+				8B1D6BA51E175A250090CA7F /* chara2.gif */,
+				8B1D6B9F1E17580E0090CA7F /* chara1.gif */,
+				8B1D6BA01E17580E0090CA7F /* chara3.gif */,
 				8B2E82E91E15F404005F9667 /* forest.png */,
 				8B2E82EA1E15F404005F9667 /* grassland.png */,
 			);
@@ -338,21 +418,45 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B27F8751E2FDD8A00BADE09 /* mon_066.gif in Resources */,
 				8B1D6BB41E17BF050090CA7F /* 炎.gif in Resources */,
 				8B2E82EB1E15F404005F9667 /* forest.png in Resources */,
 				8B721AE81DFDCE840025EA70 /* LaunchScreen.storyboard in Resources */,
+				8B27F87F1E2FDD8A00BADE09 /* mon_219.gif in Resources */,
+				8B27F87C1E2FDD8A00BADE09 /* mon_196.gif in Resources */,
+				8B27F8711E2FDD8A00BADE09 /* mon_061.gif in Resources */,
 				8B1D6BB81E17BF130090CA7F /* 雷.gif in Resources */,
-				8B1D6BA81E175A250090CA7F /* mon_194.gif in Resources */,
+				8B27F8731E2FDD8A00BADE09 /* mon_063.gif in Resources */,
+				8B27F8801E2FDD8A00BADE09 /* mon_220.gif in Resources */,
+				8B1D6BA81E175A250090CA7F /* chara2.gif in Resources */,
+				8B27F8761E2FDD8A00BADE09 /* mon_067.gif in Resources */,
+				8B27F8781E2FDD8A00BADE09 /* mon_069.gif in Resources */,
+				8B27F8741E2FDD8A00BADE09 /* mon_065.gif in Resources */,
+				8B27F8791E2FDD8A00BADE09 /* mon_070.gif in Resources */,
+				8B27F86D1E2FDD8A00BADE09 /* mon_054.gif in Resources */,
 				8B721AE51DFDCE840025EA70 /* Assets.xcassets in Resources */,
-				8B1D6BA21E17580E0090CA7F /* mon_199.gif in Resources */,
-				8B1D6BA61E175A250090CA7F /* mon_192.gif in Resources */,
+				8B27F87E1E2FDD8A00BADE09 /* mon_198.gif in Resources */,
+				8B1D6BA21E17580E0090CA7F /* chara3.gif in Resources */,
+				8B27F84D1E2FBE9000BADE09 /* attack.wav in Resources */,
+				8B27F8521E2FD5EF00BADE09 /* se_maoudamashii_onepoint23.mp3 in Resources */,
+				8B27F8701E2FDD8A00BADE09 /* mon_058.gif in Resources */,
 				8B1D6BAD1E17BDA60090CA7F /* 水系＿水撃.wav in Resources */,
-				8B1D6BA11E17580E0090CA7F /* mon_191.gif in Resources */,
-				8B1D6BA71E175A250090CA7F /* mon_193.gif in Resources */,
+				8B27F86A1E2FDD8A00BADE09 /* mon_051.gif in Resources */,
+				8B27F86F1E2FDD8A00BADE09 /* mon_057.gif in Resources */,
+				8B27F86E1E2FDD8A00BADE09 /* mon_055.gif in Resources */,
+				8B27F87D1E2FDD8A00BADE09 /* mon_197.gif in Resources */,
+				8B27F86B1E2FDD8A00BADE09 /* mon_052.gif in Resources */,
+				8B1D6BA11E17580E0090CA7F /* chara1.gif in Resources */,
+				8B27F87A1E2FDD8A00BADE09 /* mon_192.gif in Resources */,
+				8B27F8771E2FDD8A00BADE09 /* mon_068.gif in Resources */,
 				8B1D6BB11E17BDFA0090CA7F /* 雷系＿スパークが走る.wav in Resources */,
 				8B1D6BAF1E17BDB30090CA7F /* 炎系＿炎の弾.wav in Resources */,
+				8B27F8501E2FD24000BADE09 /* f008_forest8.mp3 in Resources */,
+				8B27F8721E2FDD8A00BADE09 /* mon_062.gif in Resources */,
 				8B721AE31DFDCE840025EA70 /* Main.storyboard in Resources */,
 				8B1D6BB61E17BF0D0090CA7F /* 水.gif in Resources */,
+				8B27F86C1E2FDD8A00BADE09 /* mon_053.gif in Resources */,
+				8B27F87B1E2FDD8A00BADE09 /* mon_193.gif in Resources */,
 				8B1D6BAB1E17BD680090CA7F /* ヒット＿通常.wav in Resources */,
 				8B2E82EC1E15F404005F9667 /* grassland.png in Resources */,
 			);
