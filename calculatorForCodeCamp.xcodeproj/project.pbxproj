@@ -11,9 +11,9 @@
 		8B1D6BA21E17580E0090CA7F /* chara3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D6BA01E17580E0090CA7F /* chara3.gif */; };
 		8B1D6BA81E175A250090CA7F /* chara2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D6BA51E175A250090CA7F /* chara2.gif */; };
 		8B1D6BAB1E17BD680090CA7F /* ヒット＿通常.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D6BAA1E17BD680090CA7F /* ヒット＿通常.wav */; };
-		8B1D6BAD1E17BDA60090CA7F /* 水系＿水撃.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D6BAC1E17BDA60090CA7F /* 水系＿水撃.wav */; };
-		8B1D6BAF1E17BDB30090CA7F /* 炎系＿炎の弾.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D6BAE1E17BDB30090CA7F /* 炎系＿炎の弾.wav */; };
-		8B1D6BB11E17BDFA0090CA7F /* 雷系＿スパークが走る.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D6BB01E17BDFA0090CA7F /* 雷系＿スパークが走る.wav */; };
+		8B1D6BAD1E17BDA60090CA7F /* water.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D6BAC1E17BDA60090CA7F /* water.wav */; };
+		8B1D6BAF1E17BDB30090CA7F /* fire.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D6BAE1E17BDB30090CA7F /* fire.wav */; };
+		8B1D6BB11E17BDFA0090CA7F /* thunder.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D6BB01E17BDFA0090CA7F /* thunder.wav */; };
 		8B1D6BB41E17BF050090CA7F /* 炎.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D6BB31E17BF050090CA7F /* 炎.gif */; };
 		8B1D6BB61E17BF0D0090CA7F /* 水.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D6BB51E17BF0D0090CA7F /* 水.gif */; };
 		8B1D6BB81E17BF130090CA7F /* 雷.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D6BB71E17BF130090CA7F /* 雷.gif */; };
@@ -43,6 +43,7 @@
 		8B27F87E1E2FDD8A00BADE09 /* mon_198.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B27F8671E2FDD8A00BADE09 /* mon_198.gif */; };
 		8B27F87F1E2FDD8A00BADE09 /* mon_219.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B27F8681E2FDD8A00BADE09 /* mon_219.gif */; };
 		8B27F8801E2FDD8A00BADE09 /* mon_220.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B27F8691E2FDD8A00BADE09 /* mon_220.gif */; };
+		8B27F8821E2FED3E00BADE09 /* death.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8B27F8811E2FED3E00BADE09 /* death.mp3 */; };
 		8B2DAA4E1E17D7D2006893A0 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2DAA4D1E17D7D2006893A0 /* UIImage+Gif.swift */; };
 		8B2DAA501E17DDBB006893A0 /* characterClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2DAA4F1E17DDBB006893A0 /* characterClass.swift */; };
 		8B2E82EB1E15F404005F9667 /* forest.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B2E82E91E15F404005F9667 /* forest.png */; };
@@ -83,9 +84,9 @@
 		8B1D6BA01E17580E0090CA7F /* chara3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = chara3.gif; sourceTree = "<group>"; };
 		8B1D6BA51E175A250090CA7F /* chara2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = chara2.gif; sourceTree = "<group>"; };
 		8B1D6BAA1E17BD680090CA7F /* ヒット＿通常.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "ヒット＿通常.wav"; sourceTree = "<group>"; };
-		8B1D6BAC1E17BDA60090CA7F /* 水系＿水撃.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "水系＿水撃.wav"; sourceTree = "<group>"; };
-		8B1D6BAE1E17BDB30090CA7F /* 炎系＿炎の弾.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "炎系＿炎の弾.wav"; sourceTree = "<group>"; };
-		8B1D6BB01E17BDFA0090CA7F /* 雷系＿スパークが走る.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "雷系＿スパークが走る.wav"; sourceTree = "<group>"; };
+		8B1D6BAC1E17BDA60090CA7F /* water.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = water.wav; sourceTree = "<group>"; };
+		8B1D6BAE1E17BDB30090CA7F /* fire.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fire.wav; sourceTree = "<group>"; };
+		8B1D6BB01E17BDFA0090CA7F /* thunder.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = thunder.wav; sourceTree = "<group>"; };
 		8B1D6BB31E17BF050090CA7F /* 炎.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "炎.gif"; sourceTree = "<group>"; };
 		8B1D6BB51E17BF0D0090CA7F /* 水.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "水.gif"; sourceTree = "<group>"; };
 		8B1D6BB71E17BF130090CA7F /* 雷.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "雷.gif"; sourceTree = "<group>"; };
@@ -115,6 +116,7 @@
 		8B27F8671E2FDD8A00BADE09 /* mon_198.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mon_198.gif; sourceTree = "<group>"; };
 		8B27F8681E2FDD8A00BADE09 /* mon_219.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mon_219.gif; sourceTree = "<group>"; };
 		8B27F8691E2FDD8A00BADE09 /* mon_220.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mon_220.gif; sourceTree = "<group>"; };
+		8B27F8811E2FED3E00BADE09 /* death.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = death.mp3; sourceTree = "<group>"; };
 		8B2DAA4D1E17D7D2006893A0 /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
 		8B2DAA4F1E17DDBB006893A0 /* characterClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = characterClass.swift; sourceTree = "<group>"; };
 		8B2E82E91E15F404005F9667 /* forest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forest.png; sourceTree = "<group>"; };
@@ -176,11 +178,12 @@
 		8B1D6BA91E17BD5E0090CA7F /* SE */ = {
 			isa = PBXGroup;
 			children = (
-				8B1D6BAC1E17BDA60090CA7F /* 水系＿水撃.wav */,
-				8B1D6BAE1E17BDB30090CA7F /* 炎系＿炎の弾.wav */,
+				8B1D6BAC1E17BDA60090CA7F /* water.wav */,
+				8B1D6BAE1E17BDB30090CA7F /* fire.wav */,
+				8B27F8811E2FED3E00BADE09 /* death.mp3 */,
 				8B27F8511E2FD5EF00BADE09 /* se_maoudamashii_onepoint23.mp3 */,
 				8B27F84C1E2FBE9000BADE09 /* attack.wav */,
-				8B1D6BB01E17BDFA0090CA7F /* 雷系＿スパークが走る.wav */,
+				8B1D6BB01E17BDFA0090CA7F /* thunder.wav */,
 				8B1D6BAA1E17BD680090CA7F /* ヒット＿通常.wav */,
 			);
 			name = SE;
@@ -440,17 +443,18 @@
 				8B27F84D1E2FBE9000BADE09 /* attack.wav in Resources */,
 				8B27F8521E2FD5EF00BADE09 /* se_maoudamashii_onepoint23.mp3 in Resources */,
 				8B27F8701E2FDD8A00BADE09 /* mon_058.gif in Resources */,
-				8B1D6BAD1E17BDA60090CA7F /* 水系＿水撃.wav in Resources */,
+				8B1D6BAD1E17BDA60090CA7F /* water.wav in Resources */,
 				8B27F86A1E2FDD8A00BADE09 /* mon_051.gif in Resources */,
 				8B27F86F1E2FDD8A00BADE09 /* mon_057.gif in Resources */,
+				8B27F8821E2FED3E00BADE09 /* death.mp3 in Resources */,
 				8B27F86E1E2FDD8A00BADE09 /* mon_055.gif in Resources */,
 				8B27F87D1E2FDD8A00BADE09 /* mon_197.gif in Resources */,
 				8B27F86B1E2FDD8A00BADE09 /* mon_052.gif in Resources */,
 				8B1D6BA11E17580E0090CA7F /* chara1.gif in Resources */,
 				8B27F87A1E2FDD8A00BADE09 /* mon_192.gif in Resources */,
 				8B27F8771E2FDD8A00BADE09 /* mon_068.gif in Resources */,
-				8B1D6BB11E17BDFA0090CA7F /* 雷系＿スパークが走る.wav in Resources */,
-				8B1D6BAF1E17BDB30090CA7F /* 炎系＿炎の弾.wav in Resources */,
+				8B1D6BB11E17BDFA0090CA7F /* thunder.wav in Resources */,
+				8B1D6BAF1E17BDB30090CA7F /* fire.wav in Resources */,
 				8B27F8501E2FD24000BADE09 /* f008_forest8.mp3 in Resources */,
 				8B27F8721E2FDD8A00BADE09 /* mon_062.gif in Resources */,
 				8B721AE31DFDCE840025EA70 /* Main.storyboard in Resources */,

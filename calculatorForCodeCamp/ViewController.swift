@@ -107,85 +107,101 @@ class ViewController: UIViewController {
     @IBAction func button0(_ sender: Any) {
         mainTextField.text = dealWithTextField(textField: mainTextField.text!, num: "0", lastButton:lastButton)
         lastButton = "0"
+        mikata.randomAction(enemy: teki)
     }
     @IBAction func button1(_ sender: Any) {
         
         mainTextField.text = dealWithTextField(textField: mainTextField.text!, num: "1", lastButton:lastButton)
         lastButton = "0"
+        mikata.randomAction(enemy: teki)
     }
     @IBAction func button2(_ sender: Any) {
         mainTextField.text = dealWithTextField(textField: mainTextField.text!, num: "2", lastButton:lastButton)
         lastButton = "0"
+        mikata.randomAction(enemy: teki)
     }
     @IBAction func button3(_ sender: Any) {
         mainTextField.text = dealWithTextField(textField: mainTextField.text!, num: "3", lastButton:lastButton)
         lastButton = "0"
+        mikata.randomAction(enemy: teki)
     }
     @IBAction func button4(_ sender: Any) {
         mainTextField.text = dealWithTextField(textField: mainTextField.text!, num: "4", lastButton:lastButton)
         lastButton = "0"
+        mikata.randomAction(enemy: teki)
     }
     @IBAction func button5(_ sender: Any) {
         mainTextField.text = dealWithTextField(textField: mainTextField.text!, num: "5", lastButton:lastButton)
         lastButton = "0"
+        mikata.randomAction(enemy: teki)
     }
     @IBAction func button6(_ sender: Any) {
         mainTextField.text = dealWithTextField(textField: mainTextField.text!, num: "6", lastButton:lastButton)
         lastButton = "0"
+        mikata.randomAction(enemy: teki)
     }
     @IBAction func button7(_ sender: Any) {
         mainTextField.text = dealWithTextField(textField: mainTextField.text!, num: "7", lastButton:lastButton)
         lastButton = "0"
+        mikata.randomAction(enemy: teki)
     }
     @IBAction func button8(_ sender: Any) {
         mainTextField.text = dealWithTextField(textField: mainTextField.text!, num: "8", lastButton:lastButton)
         lastButton = "0"
+        mikata.randomAction(enemy: teki)
     }
     @IBAction func button9(_ sender: Any) {
         mainTextField.text = dealWithTextField(textField: mainTextField.text!, num: "9", lastButton:lastButton)
         lastButton = "0"
+        mikata.randomAction(enemy: teki)
     }
     @IBAction func buttonPeriod(_ sender: Any) {
         mainTextField.text = dealWithTextField(textField: mainTextField.text!, num: ".", lastButton:lastButton)
         lastButton = "0"
+        mikata.randomAction(enemy: teki)
     }
     @IBAction func buttonDiv(_ sender: Any) {
+        mikata.randomAction(enemy: teki)
         if lastButton == "operator" {
-            MyCalcClass.changeOperator(input: "/")
+            MyCalcClass.changeOperator(input: "div")
         }else {
-        tempResult = String(MyCalcClass.addOperator(num: mainTextField.text!, operaterTemp: "/"))
+        tempResult = String(MyCalcClass.addOperator(num: mainTextField.text!, operaterTemp: "div"))
         mainTextField.text = checkIntOrDouble(numText:tempResult)
         lastButton = "operator"
         }
     }
     @IBAction func buttonMult(_ sender: Any) {
+        mikata.randomAction(enemy: teki)
         if lastButton == "operator" {
-            MyCalcClass.changeOperator(input: "*")
+            MyCalcClass.changeOperator(input: "multi")
         }else {
-        tempResult = String(MyCalcClass.addOperator(num: mainTextField.text!, operaterTemp: "*"))
+        tempResult = String(MyCalcClass.addOperator(num: mainTextField.text!, operaterTemp: "multi"))
         mainTextField.text = checkIntOrDouble(numText:tempResult)
         lastButton = "operator"
         }
     }
     @IBAction func buttonSub(_ sender: Any) {
+        mikata.randomAction(enemy: teki)
         if lastButton == "operator" {
-            MyCalcClass.changeOperator(input: "-")
+            MyCalcClass.changeOperator(input: "minus")
         }else {
-        tempResult = String(MyCalcClass.addOperator(num: mainTextField.text!, operaterTemp: "-"))
+        tempResult = String(MyCalcClass.addOperator(num: mainTextField.text!, operaterTemp: "minus"))
         mainTextField.text = checkIntOrDouble(numText:tempResult)
         lastButton = "operator"
         }
     }
     @IBAction func buttonAdd(_ sender: Any) {
+        mikata.randomAction(enemy: teki)
         if lastButton == "operator" {
-            MyCalcClass.changeOperator(input: "+")
+            MyCalcClass.changeOperator(input: "plus")
         }else {
-        tempResult = String(MyCalcClass.addOperator(num: mainTextField.text!, operaterTemp: "+"))
+        tempResult = String(MyCalcClass.addOperator(num: mainTextField.text!, operaterTemp: "plus"))
         mainTextField.text = checkIntOrDouble(numText:tempResult)
         lastButton = "operator"
         }
     }
     @IBAction func buttonEqual(_ sender: Any) {
+        mikata.randomAction(enemy: teki)
         tempResult = String(MyCalcClass.addOperator(num: mainTextField.text!, operaterTemp: "="))
         print(tempResult)
         mainTextField.text = checkIntOrDouble(numText:tempResult)

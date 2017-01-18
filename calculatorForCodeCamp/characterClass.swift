@@ -57,18 +57,33 @@ class Character {
         self.changeImage(image : "mon_199.gif")
         //レベルアップ時のエフェクトを何か追加
     }
+    func randomAction(enemy: Character!){
+        switch Int(arc4random_uniform(UInt32(99))%2) {
+        case 0:
+            self.attack(enemy: enemy)
+        default:
+            enemy.attack(enemy: self)
+        }
+        
+    }
     // 攻撃時ダメージ計算
     func attack(enemy: Character!) -> String {
         enemy.Animation(imageView: enemy.imageView)
         self.Sound(name1:"attack", name2:"wav", audio: &audioPlayerClear)
         enemy.hp -= ( strength - Int(arc4random_uniform(UInt32(strength / level))) ) // 計算適当
         enemy.hp = enemy.hp < 0 ? 0 : enemy.hp
-        if ( enemy.hp == 0 ) {
+        if enemy.hp == 0 && enemy.imageString[0].contains("mon_") {
             print("0です")
             enemy.changeImage(image : "mon_193.gif")
-            enemy.levelUp()
+            enemy.reset()
             self.levelUp()
             
+        } else if enemy.hp == 0 && enemy.imageString[0].contains("chara") {
+            self.Sound(name1:"death", name2:"mp3", audio: &audioPlayerClear2)
+            enemy.level = enemy.level > 1 ? enemy.level - 1 : 1
+            enemy.imageNum = (0<enemy.imageNum) ? enemy.imageNum - 1 : 0
+            enemy.imageView.image = UIImage(named : enemy.imageString[enemy.imageNum])!
+            enemy.reset()
         } else {
             //self.Sound(name1:"se_maoudamashii_onepoint23", name2:"mp3", audio: &audioPlayerClear2)
             print("0未満です")
@@ -79,7 +94,7 @@ class Character {
     func changeImage(image: String = "mon_193.gif") {
         self.imageNum = (self.imageLength>self.imageNum + 1) ? self.imageNum + 1 : self.imageNum
         self.imageView.image = UIImage(named : self.imageString[self.imageNum])!
-        self.reset()
+        self.level += (self.imageLength>self.imageNum + 1) ? 3 : 0
     }
     //音声の出力
     func Sound(name1:String, name2:String, audio:inout AVAudioPlayer!){

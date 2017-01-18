@@ -32,16 +32,16 @@ class calcClass {
     //計算を実行
     func execCalc(){
         switch self.operator1 {
-        case "+":
+        case "plus":
             self.num1 = self.num1 + self.num2
             self.operator1 = self.operator2
-        case "-":
+        case "minus":
             self.num1 = self.num1 - self.num2
             self.operator1 = self.operator2
-        case "*":
+        case "multi":
             self.num1 = self.num1 * self.num2
             self.operator1 = self.operator2
-        case "/":
+        case "div":
             self.num1 = self.num1 / self.num2
             self.operator1 = self.operator2
         default:

@@ -174,7 +174,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="button3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PSR-D1-riR"/>
-                                    <action selector="test:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XRg-Aj-ue3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQw-Ta-7EM">
